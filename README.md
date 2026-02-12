@@ -245,8 +245,8 @@ url="http://localhost:8002/ai/mcp"
 # 列出所有技能
 result = list_skills()
 
-# 搜索包含 "jd" 的技能
-result = list_skills(keyword="jd")
+# 搜索包含 "xx" 的技能
+result = list_skills(keyword="xx")
 ```
 
 **返回结构**：
@@ -256,7 +256,7 @@ result = list_skills(keyword="jd")
   "status": "success",
   "count": 25,
   "data": {
-    "jd-infra-stack": {
+    "xx-infra-stack": {
       "id": "infra-stack",
       "name": "Infrastructure Stack",
       "description": "基础设施技术栈规范",
@@ -277,7 +277,7 @@ result = list_skills(keyword="jd")
 **示例**：
 
 ```python
-result = get_skill_info(skill_id="jd-infra-stack")
+result = get_skill_info(skill_id="xx-infra-stack")
 ```
 
 **返回结构**：
@@ -386,7 +386,7 @@ Claude 会调用 `list_skills()` 并展示结果表格。
 #### Step 3: 查看技能详情
 
 ```
-请查看 jd-infra-stack 这个 skill 的详细信息
+请查看 xx-infra-stack 这个 skill 的详细信息
 ```
 
 Claude 会调用 `get_skill_info()` 并展示：
@@ -397,7 +397,7 @@ Claude 会调用 `get_skill_info()` 并展示：
 #### Step 4: 下载安装技能
 
 ```
-请下载 jd-infra-stack 技能到 ~/.claude/skills
+请下载 xx-infra-stack 技能到 ~/.claude/skills
 ```
 
 Claude 会：
